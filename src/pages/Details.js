@@ -1,11 +1,10 @@
 import React from "react";
 import Header from "parts/Header";
 import Breadcrumb from "components/Breadcrumb";
-// import BrowseRoom from "parts/HomePage/BrowseRoom";
-// import JustArrived from "parts/HomePage/JustArrived";
-import Clients from "parts/Clients";
 import Sitemap from "parts/Sitemap";
 import Footer from "parts/Footer";
+import ProductDetails from "parts/Details/ProductDetails";
+import Suggestion from "parts/Details/Suggestion";
 
 export default function Homepage() {
   return (
@@ -18,7 +17,8 @@ export default function Homepage() {
           { url: "/categories/91231/products/7888", name: "Details" },
         ]}
       />
-      <Clients />
+      <ProductDetails />
+      <Suggestion />
       <Sitemap />
       <Footer />
     </>
